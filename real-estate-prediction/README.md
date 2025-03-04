@@ -17,27 +17,29 @@ Storage: LocalStorage (for storing the trained model)
 Folder Structure
 
 real-estate-prediction/
-│── src/
+│
+├── src/
 │   ├── components/       # React components
-│   │   ├── Chart.js      # Chart visualization
+│   │   ├── Chart.js      # Price comparison chart visualization
 │   │   ├── Form.js       # User input form
-│   │   ├── Prediction.js # Display predictions & similar listings
+│   │   ├── Prediction.js # Displays predictions & similar listings
 │   │
 │   ├── data/             # Dataset (dataset.json)
 │   ├── model/            # Neural network logic (Brain.js)
-│   │   ├── brainModel.js # Handles AI model & training
+│   │   └── brainModel.js # AI model & training
 │   │
-│   ├── styles/           # CSS styles
+│   ├── styles/           # Custom CSS styles
 │   ├── App.js            # Main app component
-│   ├── index.js          # Entry point
+│   ├── index.js          # App entry point
 │   ├── index.css         # Global styles
 │
-│── public/
+├── public/
 │   ├── favicon.ico       # Custom favicon
-│   ├── index.html        # Root HTML file
+│   ├── index.html        # Root HTML template
 │
-│── package.json          # Dependencies & scripts
-│── README.md             # Documentation
+├── package.json          # Dependencies & scripts
+└── README.md             # Documentation
+
 
 How to Run Locally
 Clone the Repository
