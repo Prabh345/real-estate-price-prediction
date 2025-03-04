@@ -1,8 +1,8 @@
-Real Estate Price Prediction App
+Real Estate Price Prediction App-
 
 A React.js app that leverages AI to predict real estate prices based on various property factors using Brain.js, a JavaScript neural network library.
 
-Features
+Features-
 AI-Powered Predictions: Uses Brain.js for accurate price estimation.
 Data Visualization: Visualize price comparisons with Chart.js.
 Similar Listings: Suggests properties similar to the one entered by the user, based on the dataset.
@@ -15,9 +15,7 @@ AI Model: Brain.js (Neural network for price prediction)
 Visualization: Chart.js
 Storage: LocalStorage (for storing the trained model)
 
-Folder Structure
-
-Key Components
+Key Components-
 src/components/: Contains all React components like the chart, input form, and the prediction display.
 src/data/: Holds the dataset (dataset.json) containing real estate details for training the model.
 src/model/: Contains the AI model's logic using Brain.js. The brainModel.js file handles the neural network training and predictions.
@@ -25,23 +23,23 @@ src/styles/: Custom CSS styles to give the app its look and feel.
 public/: Stores static assets like the favicon and the root HTML template.
 package.json: Includes all dependencies and scripts required to build and run the app.
 
-How to Run Locally
-Clone the Repository
+How to Run Locally: 
+Clone the Repository:
 git clone https://github.com/Prabh345/real-estate-price-prediction.git
 cd real-estate-price-prediction
 
-Install Dependencies
+Install Dependencies - 
 npm install
 
-Start the Development Server
+Start the Development Server - 
 npm start
 
 The app will be available at http://localhost:3000.
 
-Build for Production
+Build for Production - 
 npm run build
 
-Deploy to GitHub Pages
+Deploy to GitHub Pages - 
 npm run deploy
 
 How It Works
