@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+Real Estate Price Prediction App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Predict real estate prices using AI
 
-## Available Scripts
+This React.js app leverages Brain.js (a JavaScript neural network library) to estimate property prices based on various factors.
 
-In the project directory, you can run:
+Features
 
-### `npm start`
+AI-Powered Predictions – Uses Brain.js for price estimation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Data Visualization – Chart.js displays price comparisons.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Similar Listings – Suggests matching properties from dataset.json.
 
-### `npm test`
+Persistent Model Storage – Saves trained model in localStorage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+User Feedback System – Users can rate the accuracy of predictions.
 
-### `npm run build`
+Responsive UI – Styled with Bootstrap for a clean, modern look.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Frontend: React.js, Bootstrap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+AI Model: Brain.js
 
-### `npm run eject`
+Visualization: Chart.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Storage: LocalStorage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Folder Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+real-estate-prediction/
+│── src/
+│   ├── components/       # React components
+│   │   ├── Chart.js      # Chart visualization
+│   │   ├── Form.js       # User input form
+│   │   ├── Prediction.js # Display predictions & similar listings
+│   │
+│   ├── data/             # Dataset (dataset.json)
+│   ├── model/            # Neural network logic (Brain.js)
+│   │   ├── brainModel.js # Handles AI model & training
+│   │
+│   ├── styles/           # CSS styles
+│   ├── App.js            # Main app component
+│   ├── index.js          # Entry point
+│   ├── index.css         # Global styles
+│
+│── public/
+│   ├── favicon.ico       # Custom favicon
+│   ├── index.html        # Root HTML file
+│
+│── package.json          # Dependencies & scripts
+│── README.md             # Documentation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+How to Run Locally
 
-## Learn More
+1. Clone the Repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/Prabh345/real-estate-price-prediction.git
+cd real-estate-price-prediction
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install Dependencies
 
-### Code Splitting
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Start the Development Server
 
-### Analyzing the Bundle Size
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The app will be available at http://localhost:3000.
 
-### Making a Progressive Web App
+4. Build for Production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm run build
 
-### Advanced Configuration
+5. Deploy to GitHub Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm run deploy
 
-### Deployment
+How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Users enter property details (area, bedrooms, bathrooms, location, age).
 
-### `npm run build` fails to minify
+The AI model (Brain.js) predicts the price based on trained real estate data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Users get a predicted price along with similar property listings.
+
+Charts visualize actual vs. predicted prices for better comparison.
+
+Feedback system allows users to mark predictions as accurate or inaccurate.
+
+Deployed site: https://prabh345.github.io/real-estate-price-prediction/
