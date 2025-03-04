@@ -1,32 +1,18 @@
 Real Estate Price Prediction App
-
-Predict real estate prices using AI
-
-This React.js app leverages Brain.js (a JavaScript neural network library) to estimate property prices based on various factors.
+A React.js app that leverages AI to predict real estate prices based on various property factors using Brain.js, a JavaScript neural network library.
 
 Features
-
-AI-Powered Predictions – Uses Brain.js for price estimation.
-
-Data Visualization – Chart.js displays price comparisons.
-
-Similar Listings – Suggests matching properties from dataset.json.
-
-Persistent Model Storage – Saves trained model in localStorage.
-
-User Feedback System – Users can rate the accuracy of predictions.
-
-Responsive UI – Styled with Bootstrap for a clean, modern look.
-
+AI-Powered Predictions: Uses Brain.js for accurate price estimation.
+Data Visualization: Visualize price comparisons with Chart.js.
+Similar Listings: Suggests properties similar to the one entered by the user, based on the dataset.
+Persistent Model Storage: The trained model is saved in localStorage for reuse.
+User Feedback System: Users can rate the accuracy of predictions.
+Responsive UI: Clean, modern design styled with Bootstrap.
 Technologies Used
-
 Frontend: React.js, Bootstrap
-
-AI Model: Brain.js
-
+AI Model: Brain.js (Neural network for price prediction)
 Visualization: Chart.js
-
-Storage: LocalStorage
+Storage: LocalStorage (for storing the trained model)
 
 Folder Structure
 
@@ -54,40 +40,32 @@ real-estate-prediction/
 │── README.md             # Documentation
 
 How to Run Locally
-
-1. Clone the Repository
-
+Clone the Repository
 git clone https://github.com/Prabh345/real-estate-price-prediction.git
 cd real-estate-price-prediction
 
-2. Install Dependencies
-
+Install Dependencies
 npm install
 
-3. Start the Development Server
+Start the Development Server
 
 npm start
 
 The app will be available at http://localhost:3000.
 
-4. Build for Production
-
+Build for Production
 npm run build
 
-5. Deploy to GitHub Pages
-
+Deploy to GitHub Pages
 npm run deploy
 
 How It Works
 
 Users enter property details (area, bedrooms, bathrooms, location, age).
+The AI model (Brain.js) processes the input and predicts the price.
+Users see the predicted price along with a list of similar properties.
+A chart displays a comparison between the actual and predicted prices.
+Users can provide feedback on the accuracy of the predictions.
 
-The AI model (Brain.js) predicts the price based on trained real estate data.
-
-Users get a predicted price along with similar property listings.
-
-Charts visualize actual vs. predicted prices for better comparison.
-
-Feedback system allows users to mark predictions as accurate or inaccurate.
-
-Deployed site: https://prabh345.github.io/real-estate-price-prediction/
+Deployed Site:
+https://prabh345.github.io/real-estate-price-prediction/
