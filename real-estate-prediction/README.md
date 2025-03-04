@@ -1,4 +1,5 @@
 Real Estate Price Prediction App
+
 A React.js app that leverages AI to predict real estate prices based on various property factors using Brain.js, a JavaScript neural network library.
 
 Features
@@ -16,30 +17,13 @@ Storage: LocalStorage (for storing the trained model)
 
 Folder Structure
 
-real-estate-prediction/
-│
-├── src/
-│   ├── components/       # React components
-│   │   ├── Chart.js      # Price comparison chart visualization
-│   │   ├── Form.js       # User input form
-│   │   ├── Prediction.js # Displays predictions & similar listings
-│   │
-│   ├── data/             # Dataset (dataset.json)
-│   ├── model/            # Neural network logic (Brain.js)
-│   │   └── brainModel.js # AI model & training
-│   │
-│   ├── styles/           # Custom CSS styles
-│   ├── App.js            # Main app component
-│   ├── index.js          # App entry point
-│   ├── index.css         # Global styles
-│
-├── public/
-│   ├── favicon.ico       # Custom favicon
-│   ├── index.html        # Root HTML template
-│
-├── package.json          # Dependencies & scripts
-└── README.md             # Documentation
-
+Key Components
+src/components/: Contains all React components like the chart, input form, and the prediction display.
+src/data/: Holds the dataset (dataset.json) containing real estate details for training the model.
+src/model/: Contains the AI model's logic using Brain.js. The brainModel.js file handles the neural network training and predictions.
+src/styles/: Custom CSS styles to give the app its look and feel.
+public/: Stores static assets like the favicon and the root HTML template.
+package.json: Includes all dependencies and scripts required to build and run the app.
 
 How to Run Locally
 Clone the Repository
@@ -50,7 +34,6 @@ Install Dependencies
 npm install
 
 Start the Development Server
-
 npm start
 
 The app will be available at http://localhost:3000.
